@@ -1,0 +1,18 @@
+//- views/index.pug
+extends layout
+
+block content
+  //- Example condition to choose which promo to show
+  - var showPromoA = true
+
+  if showPromoA
+    include partials/promoA
+  else
+    include partials/promoB
+
+  //- Include other sections if needed
+  include partials/hero
+  include partials/features
+  include partials/pricing
+  include partials/testimonials
+  include partials/cta

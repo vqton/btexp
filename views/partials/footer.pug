@@ -1,0 +1,14 @@
+//- views/partials/footer.pug
+footer.bg-light.py-4
+    .container.text-center
+        p &copy; 2024 Your Accounting Firm. All rights reserved.
+        .row
+            .col-md-6
+                p
+                    a(href='/privacy') Privacy Policy
+                    ||
+                    a(href='/terms') Terms of Service
+            .col-md-6
+                form(action='/subscribe' method='post')
+                    input(type='email' placeholder='Enter your email' required)
+                    button(type='submit') Subscribe
